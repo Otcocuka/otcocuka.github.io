@@ -1,0 +1,200 @@
+body{
+	margin: 0;
+	font-family: 'work sans', sans-serif;
+	color: #000;
+	font-size: 16px;
+	line-height: 1.6;
+	font-weight: 300;
+
+}
+h1,h2,h3{
+	font-weight: 300;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin-bottom: 100px !important;
+	color: grey;
+}
+
+/*header*/
+
+.header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	z-index: 23;
+
+}
+/*container*/
+.container{
+	width: 70%;
+	margin: 0 auto;
+	height: 100%;
+}
+.mini{
+	width: 50%;
+}
+.flex{
+	display: flex;
+}
+/*navbar*/
+.nav{
+	display: flex;
+}
+
+.navbar{
+	display: flex;
+	margin: 0 auto;
+	height: 80px;
+
+}
+.nav-label{
+	width: 80px;
+	height: 80px !important;
+	background-color: black;
+
+}
+
+.nav-item{
+	padding-top: 20px;
+	height: 40px;
+}
+
+.nav-link{
+	text-align: center;
+	height: 100%;
+	padding: 15px 30px;
+	color: grey;
+}
+.nav-link:hover{
+	background-color: darkgrey;
+}
+
+/*section*/
+
+section{
+	height: 100vh;
+	width: 100%;
+	padding-top: 80px;
+	background-color: white;
+}
+/*home*/
+.home{
+	padding-top: 20%;
+}
+.readmore{
+	
+	border: 1px solid black ;
+	color: black;
+	display: block;
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 240px;
+	padding: 15px 20px;
+	text-align: center;
+	font-weight: 400;
+}
+.readmore:hover{
+	background-color: black;
+	color: whitesmoke;
+}
+
+
+/*about*/
+.about{
+	background-color: dimgrey;
+	color: white;
+}
+
+.left{
+	border-right: 4px solid white;
+	padding-right: 40px;
+	padding-top: 50px;
+	width: 51%;
+	height: 100%;
+	text-align: right;
+}
+.right{
+	border-left: 4px solid white;
+	padding-left: 40px;
+	padding-top: 150px;
+	text-align: left;
+}
+.inherit{
+	text-align: inherit;
+}
+
+/*team*/
+.circle{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+.staff{
+	width: 200px;
+}
+.other-staff{
+	justify-content: space-between;
+	margin-top: -300px !important;
+
+}
+.center{
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*Services*/
+.services{
+	background-color: dimgrey;
+	position: relative;
+}
+.triangle{
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid dimgrey;
+      border-left: 2000px solid transparent;
+      position: absolute;
+      top: -100px;
+}
+.service{
+	width: 400px;
+}
+.cards{
+	justify-content: space-around;
+}
+/*contact*/
+
+
+
+/*form*/
+.form-item{
+	width: 100%;
+	border: 1px solid grey;
+	padding: 0;
+	height: 2rem;
+	margin-bottom: 1em;
+
+}
+.btn{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	display: block;
+
+}
+
+/*footer*/
+.footer{
+	margin-bottom: 2em;
+}
