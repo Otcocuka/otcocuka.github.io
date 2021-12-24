@@ -19,8 +19,7 @@ header
 	h1
 		margin-top: 10px
 		font-weight: 700
-		font-size: 28px
-		text-transform: uppercase
+		font-size: 16px
 .wrapper
 	height: 20px
 	vertical-align: middle
@@ -32,30 +31,22 @@ header
 	
 	background-color: white
 	display: flex
+	width: 100%
 	justify-content: space-between
 	.horse
 		padding: 0
-		width: 400px
+		min-width: 400px
 		height: 234px
 		background: url('../img/logo-n.gif') center (center / cover) no-repeat
 	.sanri
 		width: 580px
 		height: 105px
+		flex-basis: 51%
 		background: url('../img/sanri-n.gif') center (center / cover) no-repeat
-.dvesti
-	background-color: $main_color
-	height: 45px
-	width: 100%
-
-.sto
-	height: 55px
-	width: 100%
-	vertical-align: middle
-	background-image: url('../img/2px.gif')
-	background-color: $main_color
 .border
 	height: 105px
-	width: 30.5%
+	width: 60%
+	background: url('../img/pol-n.gif')
 .circle
 	width: 80px
 	height: 45px
@@ -71,15 +62,34 @@ header
 	line-height: 1.5rem
 	font-weight: 700
 	padding-left: 50px
+	position: relative
 	&_link
 		color: $main_color
 		text-decoration: none
+	&::before
+		content: ""
+		position: absolute
+		left: 120px
+		top: 0
+		width: 32px
+		height: 49px
+		background: url('../img/tel.gif') center (center / cover) no-repeat
 .mail
 	text-align: center
 	font-size: 25px
 	font-weight: 700
 	padding-left: 50px
-
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		left: 120px
+		top: 0
+		width: 32px
+		height: 49px
+		background: url('../img/email.gif') center (center / cover) no-repeat
+.mail
+		
 	a
 		color: $main_color
 		text-decoration: none
@@ -91,6 +101,8 @@ header
 	width: 300px
 	background-color: $main_color
 	margin: 0 auto
+	font-size: 16px
+	text-transform: uppercase
 	
 .menu
 	list-style: none
@@ -103,6 +115,7 @@ header
 		background-color: $main_color
 		width: 25%
 		padding: 10px
+		font-size: 14px
 	&-link
 		text-transform: uppercase
 		text-decoration: none
@@ -123,8 +136,14 @@ main
 	margin: 50px
 	text-transform: uppercase
 	text-align: center
-	font-size: 
+	height: 200px 
+	font-size: 12px
+	white-space: nowrap
+	text-align: center
+	
 
+.white
+	color: $second_color
 
 .img-interior
 	height: 200px
@@ -142,3 +161,21 @@ main
 
 footer
 	text-align: center
+
+h3
+	font-size: 16px
+	font-weight: 700
+
+p
+	margin-bottom: 0
+
+
+
+
+
+@import "media"
+		
+	
+		
+
+	
