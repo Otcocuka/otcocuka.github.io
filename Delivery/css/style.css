@@ -1,0 +1,134 @@
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+body{
+	position: relative;
+}
+
+.container-xl{
+	max-width: 1170px;
+}
+
+.lang{
+	background-color: red;
+	height: 50px;
+}
+
+/*nav*/
+.nav{
+	height: 120px;
+	background-color: yellow;
+	padding-top: 45px;
+
+}
+.nav-brand{
+
+}
+.nav-link{
+	padding: 0;
+	color: orangered;
+	font-weight: 14px;
+}
+/*express*/
+.express{
+	height: 800px;
+	background-color: darkred;
+	padding-top: 180px;
+	background: url("../img/express.png") center no-repeat;
+}
+.express h1, .express h3{
+	font-weight: 70px;
+	line-height: 80px;
+}
+.express p{
+	font-weight: 20px;
+	line-height: 30px;
+}
+.plank{
+	height: 4px;
+	width: 99px;
+	background-color: yellow;
+	margin-bottom: 20px;
+}
+
+.btn{
+	border: 2px solid white;
+	border-radius: 30px ;
+	color: white;
+}
+.secondary{
+	color: orangered;
+	background-color: yellow;
+	border: none;
+}
+
+/*parcel*/
+h2{
+	font-size: 50px;
+	line-height: 80px;
+}
+.parcel{
+	height: 670px;
+	background-color: white;
+	padding-top: 110px;
+}
+
+
+/*about us*/
+.about{
+	height: 700px;
+	background-color: yellow;
+	position: relative;
+	background: url(../img/about.png) no-repeat center;
+}
+.about-title{
+	padding-top: 160px;
+	font-weight: 50px;
+	line-height: 80px;
+}
+.half{
+	position: absolute;
+	bottom: -103px;
+}
+
+/*contact*/
+.contact{
+	height: 950px;
+	padding-top: 320px;
+	background-color: white;
+}
+
+
+.modal{
+	background-color: darkred;
+	width: 570px;
+	height: 540px;
+}
+
+
+
+/*press*/
+.features{
+	height: 350px;
+	background-color: darkred;
+	padding-top: 100px;
+
+}
+
+
+/*client*/
+.client{
+height:270px;
+background-color: grey;
+padding-top: 70px;
+}
+
+
+/*footer*/
+.footer{
+height:310px;
+background-color: whitesmoke;
+padding-top: 70px;
+}
