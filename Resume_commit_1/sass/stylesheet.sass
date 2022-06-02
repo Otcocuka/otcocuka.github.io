@@ -1,0 +1,122 @@
+body
+    background-color: yellow
+    font-size: 16px
+    
+
+
+
+
+
+
+
+.header
+    background: rgba(0,0,0,0.8)
+    -webkit-backdrop-filter: saturate(180%) blur(20px)
+    backdrop-filter: saturate(180%) blur(20px)
+    height: 44px
+    color: white
+    &__wrapper
+        width: 100%
+    &__nav
+        display: flex
+        justify-content: space-around
+        list-style-type: none
+        &__link
+            padding: 10px 20px
+            a
+                text-decoration: none
+                color: inherit
+    
+
+.about
+    height: 100vh
+    position: relative
+    .hero
+        position: absolute
+        bottom: 0
+        left: 0
+        height: 100%
+    .bubble
+        position: absolute
+        top: 0
+        right: 25%
+        height: 480px
+        width: 520px
+        background: url(../img/bubble.png) center center/cover no-repeat
+        padding: 70px
+        p
+            margin-top: 60px
+            font-size: 24px
+            
+
+.skills
+    height: 800px
+    padding: 50px
+    // background: url(../img/hacker.gif) center center/cover no-repeat
+    // background-attachment: fixed
+    &__list
+        &__item
+            font-weight: 700
+            font-size: 24px
+            text-shadow: 4px 4px 2px rgba(255, 255, 255, 1)
+            
+.skills__wrapper
+    // background: url(../img/hacker.gif) center center/cover no-repeat
+    // background-attachment: fixed
+    background-color: #eee
+.skills__card
+    // background-color: rgba(255, 255, 255, 0.3)
+    
+
+/*position: relative;
+    padding: 50px;
+    background: url(../img/quality-bg1.jpg) 50% 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+.contacts
+    height: 100vh
+    background-color: #000
+    padding-top: 100px
+    &__wrapper
+        
+        // background: url(../img/hacker.gif) center center/cover no-repeat
+        // background-attachment: fixed
+        height: 400px
+        padding: 50px
+    &__title
+        text-align: center
+        font-size: 40px
+        color: #fff
+.feed-form 
+    margin-top: 36px
+    display: flex
+    flex-direction: column
+    width: 300px
+    margin: auto
+    input 
+        height: 50px
+        border-radius: 5px
+        background-color: #ffffff
+        margin-bottom: 15px
+        border: none
+        padding: 0 20px
+        color: #4a4a4a
+        font-size: 14px
+        font-weight: 300
+
+
+.btnScroll
+    position: fixed
+    top: 10%
+    right: 10%
+    width: 40px
+    height: 50px
+    background-color: yellow
+    border: 1px solid #000
+    display: none
+    
+.menuBg
+    background: red
