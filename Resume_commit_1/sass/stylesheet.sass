@@ -5,7 +5,8 @@ body
 
 
 
-
+strong
+    color: turquoise
 
 
 
@@ -110,13 +111,67 @@ body
 
 .btnScroll
     position: fixed
+    z-index: 100
     top: 10%
     right: 10%
     width: 40px
     height: 50px
-    background-color: yellow
+    background-color: turquoise
     border: 1px solid #000
     display: none
     
 .menuBg
     background: red
+
+.skills1
+    height: 100vh
+    &__list
+        list-style-type: none
+    &__container
+        border: 1px solid #000
+        height: 350px
+        background-color: #d9d59c
+
+.test
+    height: 100vh
+
+
+/* весь контейнер поддерживает перспективу
+
+.flip-container
+    perspective: 1000
+    
+    &:hover .flipper, &.hover .flipper
+        transform: rotateY(180deg)
+        
+
+/* переверните сторону при проведении мышью
+
+
+/* здесь находится скорость перевертывания
+
+.flipper
+  transition: .3s
+  transform-style: preserve-3d
+  position: relative
+  border: 1px solid #000
+  background-color: #d9d59c
+  height: 350px
+/* скройте обратную сторону во время переворота
+
+.front, .back
+  backface-visibility: hidden
+  position: absolute
+  top: 0
+  left: 0
+  padding: 100px
+
+/* лицевая сторона размещена над обратной
+
+.front
+  z-index: 2
+
+/* обратная, изначально скрытая сторона
+
+.back
+  transform: rotateY(180deg)
