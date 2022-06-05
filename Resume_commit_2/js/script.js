@@ -60,3 +60,15 @@ $( document ).ready(function() {
   // });
 });
 });
+
+
+$( document ).ready(function() {
+  // $('#about').click(function(){
+    // $('.hero').css("left", "0");
+    $('.hero').animate({ left:0 }, 6000);
+    $('.bubble').delay(6000).slideDown(600);
+    $('#about').click(function(){
+      $('.xyi').slideDown(400);
+    
+  });
+});
