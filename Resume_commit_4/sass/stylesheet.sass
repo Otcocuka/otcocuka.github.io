@@ -1,0 +1,266 @@
+body
+    background-color: yellow
+    font-size: 16px
+    
+    overflow-x: hidden
+
+
+
+strong
+    color: turquoise
+.xyi
+    display: none
+
+.header
+    background: rgba(0,0,0,0.8)
+    -webkit-backdrop-filter: saturate(180%) blur(20px)
+    backdrop-filter: saturate(180%) blur(20px)
+    height: 44px
+    color: white
+    &__wrapper
+        width: 100%
+    &__nav
+        display: flex
+        justify-content: space-around
+        list-style-type: none
+        &__link
+            padding: 10px 20px
+            a
+                text-decoration: none
+                color: inherit
+    
+
+.about
+    height: 100vh
+    position: relative
+    .hero
+        position: absolute
+        bottom: 0
+        left: -2000px
+        height: 80%
+    .bubble
+        display: none
+        position: absolute
+        top: 10%
+        right: 45%
+        height: 480px
+        width: 520px
+        background: url(../img/bubble.png) center center/cover no-repeat
+        padding: 70px
+    p
+        display: block
+        position: absolute
+        top: 15%
+        right: 45%
+        height: 480px
+        width: 520px
+        margin-top: 60px
+        font-size: 24px
+    .phrase_1
+        display: none
+        z-index: 1000
+        height: 480px
+        width: 520px
+    .phrase_2
+        display: none
+        z-index: 1000
+.author
+    position: relative
+    height: 100vh
+    margin-bottom: 100px
+    background: rgb(214, 222, 243)
+    &__photo
+        width: 100%
+        // transform: translateX(20%)
+    &__point
+        height: 80vh
+        position: absolute
+        bottom: 0
+        left: 0
+        display: none
+    .bubble2
+        position: absolute
+        bottom: 50%
+        left: 10%
+        height: 50vh
+        display: none
+        &_inner
+            display: block
+            position: absolute
+            top: 8%
+            left: 15%
+            height: 480px
+            width: 520px
+            font-size: 24px
+            display: none
+            &_2
+                display: none
+                position: absolute
+                top: 6%
+                left: 13%
+                height: 480px
+                width: 520px
+                font-size: 24px
+    .author__description_text, .press, .author__description
+        display: none
+    .author__description_text
+        margin: 300px
+    .press
+        width: 300px
+        padding: 25px
+        border-radius: 5px
+        background-color: #111
+        display: block
+        color: rgb(214, 222, 243)
+
+
+.skills
+    height: 800px
+    padding: 50px
+    // background: url(../img/hacker.gif) center center/cover no-repeat
+    // background-attachment: fixed
+    &__list
+        &__item
+            font-weight: 700
+            font-size: 24px
+            text-shadow: 4px 4px 2px rgba(255, 255, 255, 1)
+            
+.skills__wrapper
+    // background: url(../img/hacker.gif) center center/cover no-repeat
+    // background-attachment: fixed
+    background-color: #eee
+.skills__card
+    // background-color: rgba(255, 255, 255, 0.3)
+    
+
+/*position: relative;
+    padding: 50px;
+    background: url(../img/quality-bg1.jpg) 50% 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+.contacts
+    height: 100vh
+    background-color: #000
+    padding-top: 100px
+    &__wrapper
+        
+        // background: url(../img/hacker.gif) center center/cover no-repeat
+        // background-attachment: fixed
+        height: 400px
+        padding: 50px
+    &__title
+        text-align: center
+        font-size: 40px
+        color: #fff
+.feed-form 
+    margin-top: 36px
+    display: flex
+    flex-direction: column
+    width: 300px
+    margin: auto
+    input 
+        height: 50px
+        border-radius: 5px
+        background-color: #ffffff
+        margin-bottom: 15px
+        border: none
+        padding: 0 20px
+        color: #4a4a4a
+        font-size: 14px
+        font-weight: 300
+
+
+.btnScroll
+    position: fixed
+    z-index: 100
+    top: 10%
+    right: 10%
+    width: 40px
+    height: 50px
+    background-color: turquoise
+    border: 1px solid #000
+    display: none
+    
+.menuBg
+    background: red
+
+.skills1
+    height: 100vh
+    &__list
+        list-style-type: none
+    &__container
+        border: 1px solid #000
+        height: 50vh
+        background-color: #d9d59c
+
+.test
+    position: relative
+    .skills1
+        height: 100vh
+        position: relative
+    .doomer
+        position: absolute
+        height: 80vh
+        z-index: 1000
+        bottom: 0
+        left: -10%
+    .bubble3
+        transform: rotate(-90deg)
+        position: absolute
+        z-index: 1000
+        bottom: 30%
+        left: 30%
+        height: 70vh
+        &__inner
+            position: absolute
+            bottom: 62%
+            left: 38%
+            z-index: 1001
+
+    .doomer, .bubble3, .bubble3__inner_phrase1, .bubble3__inner_phrase2, .bubble3__inner_link
+        display: none
+
+
+
+/* весь контейнер поддерживает перспективу
+
+.flip-container
+    perspective: 1000
+    
+    &:hover .flipper, &.hover .flipper
+        transform: rotateY(180deg)
+        
+
+/* переверните сторону при проведении мышью
+
+
+/* здесь находится скорость перевертывания
+
+.flipper
+  transition: .3s
+  transform-style: preserve-3d
+  position: relative
+  border: 1px solid #000
+  background-color: #d9d59c
+  height: 50vh
+/* скройте обратную сторону во время переворота
+
+.front, .back
+  backface-visibility: hidden
+  position: absolute
+  top: 0
+  left: 0
+  padding: 100px
+
+/* лицевая сторона размещена над обратной
+
+.front
+  z-index: 2
+
+/* обратная, изначально скрытая сторона
+
+.back
+  transform: rotateY(180deg)
