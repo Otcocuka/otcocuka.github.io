@@ -98,4 +98,4 @@ $('.press').click(function(){
 // $('.phrase_1').slideDown(3000).replaceWith(ph2).slideDown(3000);
 
 
-// document.body.style.overflow = 'hidden';
+document.body.style.overflow = 'hidden';
