@@ -1,0 +1,180 @@
+body
+	font-family: 'Roboto', sans-serif!important
+	
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap')
+
+html, body, .stage, .ring, .img
+	width: 100%
+	height: 100%
+	transform-style: preserve-3d
+	user-select: none
+.img
+		overflow: hidden
+html, body
+	overflow: hidden
+	background: white
+
+	
+
+.stage
+	div
+		position: absolute
+
+
+.container
+	perspective: 4000px
+	width: 300px
+	height: 400px
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+
+.background
+	// pointer-events: none
+	width: 100%
+	height: 100%
+	background: url(../img/carousel/uber1.png) center center/cover no-repeat
+
+
+.overlay
+	width: 100%
+	height: 100vh
+	color: black
+	
+	display: none
+
+.frame
+	height: 100vh
+	width: 100%
+	iframe
+		width: 100%
+		height: 100%
+.close
+	position: absolute
+	top: 5%
+	right: 5%
+	width: 124px
+	height: 112px
+	font-size: 24px
+	background: rgb(214, 222, 243)
+.reveal
+	width: 40px
+	height: 50px
+	background-color: red
+
+.veal
+	width: 100%
+	height: 100%
+	background-color: red
+
+.display-none
+	display: none
+
+
+.sorryframe
+	position: relative
+	.sorry_mate
+		font-size: 38px
+		color: #000
+		position: absolute
+		top: 25%
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 1
+	.sry
+		position: absolute
+		bottom: 0
+		left: 0
+		z-index: 0
+
+.back
+	display: none
+
+.back__link
+	position: absolute
+	top: 10%
+	left: 50%
+	transform: translateX(-50%)
+	text-decoration: none
+	color: #000
+	font-size: 24px
+	&:hover
+		color: blue
+			
+
+.please
+	position: relative
+	display: none
+	&_image
+		position: absolute
+		left: 3%
+		top: 50px
+		width: 1000px
+		height: 1000px
+		display: block
+		z-index: 1000
+	&_bubble
+		position: absolute
+		left: 40%
+		top: -50px
+		width: 900px
+		height: 650px
+		display: block
+		z-index: 1000
+	p
+		font-size: 24px
+		position: absolute
+		left: 48%
+		top: 120px
+	&_phrase1, &_phrase2, &_phrase3
+		display: none
+	.contacts
+		display: none
+		position: absolute
+		z-index: 1000
+		left: 48%
+		top: 290px
+		width: 200px
+		padding: 25px
+		border-radius: 5px
+		background-color: #111
+		color: rgb(214, 222, 243)
+		text-decoration: none
+
+
+.press
+	width: 200px
+	padding: 25px
+	border-radius: 5px
+	background-color: #111
+	color: rgb(214, 222, 243)
+	transition: .3s ease
+	&:hover
+		color: #111
+		background-color: rgba(214, 222, 243, .9)
+		border: rgb
+		cursor: pointer
+
+
+
+@media screen and ( max-width: 321px )
+	.sorryframe
+		position: relative
+		.sorry_mate
+			font-size: 20px
+		.sry
+			position: absolute
+			bottom: 0
+			left: 0
+			z-index: 0
+			width: 100%
+	.close
+		position: absolute
+		top: 5%
+		right: 5%
+		width: 310px
+		height: 112px
+		margin: 0 auto
+		font-size: 24px
+		background: #000
+		

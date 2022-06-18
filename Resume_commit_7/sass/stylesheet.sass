@@ -1,0 +1,460 @@
+body
+	background-color: yellow
+	font-size: 16px
+	font-weight: 500
+	overflow-x: hidden
+	font-family: 'Roboto', sans-serif!important
+
+// @font-face 
+// 	font-family: 'Anime Ace v05'
+// 	src: url('../fonts/anime_ace_v05.eot')
+// 	src: url('../fonts/anime_ace_v05.eot?#iefix') format('embedded-opentype'), 
+// 		url:('../fonts/anime_ace_v05.woff2') format('woff2'), 
+// 		url:('../fonts/anime_ace_v05.woff') format('woff'), 
+// 		url:('../fonts/anime_ace_v05.ttf') format('truetype'), 
+// 		url:('../fonts/anime_ace_v05.svg#anime_ace_v05') format('svg') 
+
+// body
+// 	font-family: "Anime Ace v05", sans-serif
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap')
+
+
+strong
+	color: turquoise
+.xyi
+	display: none
+
+.header
+	background: rgba(0,0,0,0.8)
+	-webkit-backdrop-filter: saturate(180%) blur(20px)
+	backdrop-filter: saturate(180%) blur(20px)
+	height: 44px
+	color: white
+	&__wrapper
+		width: 100%
+	&__nav
+		display: flex
+		justify-content: space-around
+		list-style-type: none
+		&__link
+			padding: 10px 20px
+			a
+				text-decoration: none
+				color: inherit
+	
+
+.about
+	height: 100vh
+	position: relative
+	.hero
+		position: absolute
+		bottom: 0
+		left: -2000px
+		height: 80%
+	.bubble
+		display: none
+		position: absolute
+		top: 10%
+		right: 45%
+		height: 480px
+		width: 520px
+		background: url(../img/bubble.png) center center/cover no-repeat
+		padding: 70px
+	p
+		display: block
+		position: absolute
+		top: 17%
+		right: 40%
+		height: 480px
+		width: 520px
+		margin-top: 60px
+		font-size: 25px
+	.phrase_1
+		display: none
+		z-index: 1000
+		height: 480px
+		width: 520px
+	.phrase_2
+		display: none
+		z-index: 1000
+.author
+	position: relative
+	height: 100vh
+	margin-bottom: 100px
+	background: rgb(214, 222, 243)
+	overflow-y: hiddden
+	&__description_text
+		font-size: 24px
+		margin: 100px 150px 0
+	&__description_hint
+		font-size: 24px
+		margin-left: 75px
+		.press
+			margin-left: 75px
+	&__photo
+		width: 100%
+		max-height: 100vh
+		// transform: translateX(20%)
+	&__point
+		height: 80vh
+		position: absolute
+		bottom: 0
+		left: 0
+		display: none
+	.bubble2
+		position: absolute
+		bottom: 50%
+		left: 10%
+		height: 50vh
+		display: none
+		&_inner
+			display: block
+			position: absolute
+			top: 8%
+			left: 15%
+			height: 480px
+			width: 520px
+			font-size: 26px
+			display: none
+			&_2
+				display: none
+				position: absolute
+				top: 6%
+				left: 14%
+				height: 480px
+				width: 520px
+				font-size: 24px
+	.author__description_text, .press, .author__description, .author__description_hint
+		// display: none
+
+.press
+	width: 300px
+	padding: 25px
+	border-radius: 5px
+	background-color: #111
+	color: rgb(214, 222, 243)
+	transition: .3s ease
+	&:hover
+		color: #111
+		background-color: rgba(214, 222, 243, .9)
+		border: rgb
+		cursor: pointer
+
+
+.skills
+	height: 800px
+	padding: 50px
+	// background: url(../img/hacker.gif) center center/cover no-repeat
+	// background-attachment: fixed
+	&__list
+		&__item
+			font-weight: 700
+			font-size: 24px
+			text-shadow: 4px 4px 2px rgba(255, 255, 255, 1)
+			
+.skills__wrapper
+	// background: url(../img/hacker.gif) center center/cover no-repeat
+	// background-attachment: fixed
+	background-color: #eee
+.skills__card
+	// background-color: rgba(255, 255, 255, 0.3)
+	
+
+/*position: relative;
+	padding: 50px;
+	background: url(../img/quality-bg1.jpg) 50% 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+
+
+.contacts
+	height: 100vh
+	background-color: #d6def3
+	padding-top: 100px
+	&__wrapper
+		
+		// background: url(../img/hacker.gif) center center/cover no-repeat
+		// background-attachment: fixed
+		height: 400px
+		padding: 50px
+	&__title
+		text-align: center
+		font-size: 56px
+		color: #000
+		margin-bottom: 50px
+.feed-form 
+	margin-top: 36px
+	display: flex
+	flex-direction: column
+	width: 300px
+	margin: auto
+	input 
+		height: 50px
+		border-radius: 5px
+		background-color: #ffffff
+		margin-bottom: 30px
+		border: none
+		padding: 0 20px
+		color: #4a4a4a
+		font-size: 14px
+		font-weight: 300
+
+
+.btnScroll
+	position: fixed
+	z-index: 100
+	top: 10%
+	right: 10%
+	width: 40px
+	height: 50px
+	background-color: turquoise
+	border: 1px solid #000
+	display: none
+	
+.menuBg
+	background: red
+
+.skills1
+	height: 100vh
+	&__list
+		list-style-type: none
+	&__container
+		border: 1px solid #000
+		height: 50vh
+		background-color: #d9d59c
+
+.test
+	position: relative
+	.skills1
+		height: 100vh
+		position: relative
+	.doomer
+		position: absolute
+		height: 80vh
+		z-index: 1000
+		bottom: 0
+		left: -10%
+	.bubble3
+		transform: rotate(-90deg)
+		position: absolute
+		z-index: 1000
+		bottom: 30%
+		left: 30%
+		height: 70vh
+		&__inner
+			position: absolute
+			font-size: 20px
+			bottom: 62%
+			left: 38%
+			z-index: 1001
+			.bubble3__inner_phrase2
+				margin-bottom: 50px
+			.bubble3__inner_link
+				text-decoration: none				
+				padding: 17px 70px 17px
+				border-radius: 5px
+				background-color: #111
+				color: #d6def3
+			
+
+	.doomer, .bubble3, .bubble3__inner_phrase1, .bubble3__inner_phrase2, .bubble3__inner_link
+		display: none
+
+
+
+/* весь контейнер поддерживает перспективу
+
+.flip-container
+	perspective: 1000
+	
+	&:hover .flipper, &.hover .flipper
+		transform: rotateY(180deg)
+		
+
+/* переверните сторону при проведении мышью
+
+
+/* здесь находится скорость перевертывания
+.flipper-container
+	height: 100vh
+	width: 100%
+.flipper
+	transition: .3s
+	transform-style: preserve-3d
+	position: relative
+	border: 1px solid #000
+	background: rgb(214, 222, 243)
+	height: 50vh
+/* скройте обратную сторону во время переворота
+
+.front, .back
+	backface-visibility: hidden
+	position: absolute
+	top: 0
+	left: 0
+	padding: 100px
+
+/* лицевая сторона размещена над обратной
+
+.front
+	z-index: 2
+
+/* обратная, изначально скрытая сторона
+
+.back
+	transform: rotateY(180deg)
+
+
+//!achtung!
+
+.achtung
+	height: 100vh
+	padding: 100px
+	&__title
+		text-align: center
+		margin-bottom: 100px
+		font-size: 56px
+	&__text
+		text-align: center
+		font-size: 24px
+		margin-bottom: 100px
+		font-weight: 500
+	.press
+		text-decoration: none
+	&__continue
+		display: none
+	.hidden
+		display: none
+
+// adaptive
+@media screen and ( max-width: 1919px )
+
+@media screen and ( max-width: 1400px )
+	body
+		overflow-x: hidden
+	.author
+		&__photo
+			display: none
+		&__description_text
+			display: block
+			font-size: 20px
+			margin: 100px 
+		&__description_hint
+			text-align: center
+			font-size: 20px
+			margin: 0 auto
+		.press
+			margin: 0 auto
+
+	.test
+		.skills__list__item
+			font-weight: 500
+			font-size: 16px
+		// position: relative
+		// .skills1
+		// 	height: 100vh
+		// 	position: relative
+		// .doomer
+		// 	position: absolute
+		// 	height: 80vh
+		// 	z-index: 1000
+		// 	bottom: 0
+		// 	left: -10%
+		// .bubble3
+		// 	transform: rotate(-90deg)
+		// 	position: absolute
+		// 	z-index: 1000
+		// 	bottom: 30%
+		// 	left: 30%
+		// 	height: 70vh
+		// 	&__inner
+		// 		position: absolute
+		// 		font-size: 20px
+		// 		bottom: 62%
+		// 		left: 38%
+		// 		z-index: 1001
+		// 		.bubble3__inner_phrase2
+		// 			margin-bottom: 50px
+		// 		.bubble3__inner_link
+		// 			text-decoration: none				
+		// 			padding: 17px 70px 17px
+		// 			border-radius: 5px
+		// 			background-color: #111
+		// 			color: #d6def3
+	.front, .back
+		font-size: 16px
+
+
+@media screen and ( max-width: 768px )
+
+	.author
+		&__description_text
+			font-size: 16px
+			margin: 100px 
+		&__description_hint
+			text-align: center
+			font-size: 16px
+			margin: 0 auto
+		.press
+			margin: 0 auto
+	.test
+		.skills__list__item
+			font-weight: 500
+			font-size: 14px
+		.skills1__subtitle
+			margin: 20px auto 
+			font-size: 16px
+			text-align: center
+		.front
+			padding: 200px 50px 0
+	
+
+
+
+@media screen and ( max-width: 576px )
+	.author
+		&__description_text
+			font-size: 16px
+			margin: 50px 
+		&__description_hint
+			text-align: center
+			font-size: 14px
+			margin: 0 auto
+		.press
+			margin: 0 auto
+
+	.test
+		.skills__list
+			padding-left: 20px
+			display: block
+			&__item
+				font-weight: 500
+				font-size: 12px
+				padding-left: 20px
+		.skills1__subtitle
+			margin: 20px auto 
+			font-size: 16px
+			text-align: center
+		.front, .back
+			padding: 100px 40px 0
+		
+
+@media screen and ( max-width: 321px )
+
+
+	.test
+		.skills__list
+			padding-left: 20px
+			display: block
+			&__item
+				font-weight: 500
+				font-size: 8px
+				padding-left: 20px
+		.skills1__subtitle
+			margin: 20px auto 
+			font-size: 10px
+			text-align: center
+		.front, .back
+			padding: 100px 15px 0
