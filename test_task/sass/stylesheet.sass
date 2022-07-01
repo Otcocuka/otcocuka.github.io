@@ -1,0 +1,151 @@
+body
+  font-family: Arial, sans-serif
+  height: 1000px
+.container
+  margin: 0 auto
+  background-color: #C0DBD9
+  height: 100%
+  padding: 0 15px 0 15px
+  max-width: 1200px
+  width: 100%
+
+.blue
+  box-sizing: border-box
+  background-color: #7FAFF6
+  height: 100px
+  width: 100%
+  padding: 30px
+  margin-bottom: 15px
+  display: flex
+  align-items: center
+
+.green
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-evenly
+  min-height: 411px
+  box-sizing: border-box
+  gap: 15px
+  counter-reset: test
+  background-color: #B3F95A
+  margin-bottom: 15px
+  &__block
+    height: 198px
+    flex-basis: 160px
+    background-color: #8AD191
+  div::before
+    counter-increment: test
+    content: counter(test)
+    height: 198px
+    font-weight: 400
+    font-size: 53px
+    line-height: 62px
+    color: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    
+  .one
+    flex-basis: 34%
+    flex-shrink: 1
+  .two
+    flex-basis: 50%
+    flex-shrink: 2
+  .three
+    flex-basis: 160px
+
+  .four
+    flex-basis: 80%
+    flex-shrink: 1
+    flex-grow: 1
+  .five
+    flex-basis: 160px
+
+
+.darkblue
+  box-sizing: border-box
+  display: flex
+  justify-content: space-evenly
+  gap: 30px
+  height: 259px
+  width: 100%
+  background-color: #88B5BF
+  padding: 30px
+  margin-bottom: 100px
+  .aspect-ratio
+    flex-shrink: 1
+    // aspect-ratio: 1/1
+    width: 255px
+    height: 199px
+    background-color: #0D89B0
+    overflow: hidden
+    // width: 100%
+    height: 0
+    padding-bottom: 17.45% //16*9
+
+
+
+.button
+  font-size: 20px
+  line-height: 23.44px
+  font-weight: 400
+  padding: 8px 15px
+  color: #fff
+  background-color: #A5C7F9
+  border-radius: 5px
+  text-decoration: none
+  cursor: pointer
+  transition: all 0.3s ease-out
+
+  &:hover
+    background: #06D85F
+
+.overlay
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: rgba(0, 0, 0, 0.7)
+  transition: opacity 500ms
+  visibility: hidden
+  opacity: 0
+
+  &:target
+    visibility: visible
+    opacity: 1
+
+.popup
+  margin: 70px auto
+  padding: 20px
+  background: #fff
+  border-radius: 5px
+  height: 400px
+  max-width: 400px
+  position: relative
+  transition: all 5s ease-in-out
+  font-size: 53px
+
+  h2
+    margin-top: 0
+    color: #333
+    font-family: Tahoma, Arial, sans-serif
+
+  .close
+    position: absolute
+    top: 15px
+    right: 15px
+    transition: all 200ms
+    font-size: 30px
+    font-weight: bold
+    text-decoration: none
+    color: #333
+
+    &:hover
+      color: #06D85F
+
+  .content
+    height: 400px
+    max-width: 400px
+    text-align: center
+    margin-top: 169px
